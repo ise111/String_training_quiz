@@ -65,6 +65,7 @@ const setupQuiz = () => {
      return answer != quiz[quizIndex].correct;
   });
   let final_answers = shuffleQuizAnswers(finalAnswers(quiz[quizIndex].answers, incorrectAnswers));
+  console.log(quiz[quizIndex].correct);
   while(answerNomber < $button.length){
     $button[answerNomber].textContent = final_answers[answerNomber];
     answerNomber++;
